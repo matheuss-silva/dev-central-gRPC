@@ -1,0 +1,9 @@
+{
+    "python.analysis.extraPaths": [
+        "./notification_pb2_",
+        "./notification_pb2_",
+        "./notification_pb2_",
+        "./notification_pb2_",
+        "./central_notificacoes/grpc_server"
+    ]
+}
