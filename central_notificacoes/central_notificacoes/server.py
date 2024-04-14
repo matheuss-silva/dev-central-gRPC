@@ -2,6 +2,8 @@ from concurrent import futures
 import grpc
 import notification_pb2
 import notification_pb2_grpc
+from .grpc_server.notification_pb2 import NotificationRequest, NotificationResponse
+from .grpc_server.notification_pb2_grpc import NotificationServiceStub
 
 class NotificationService(notification_pb2_grpc.NotificationServiceServicer):
     def SendNotification(self, request, context):

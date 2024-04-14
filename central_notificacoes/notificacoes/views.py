@@ -1,10 +1,12 @@
 from django.shortcuts import render
-
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 import grpc
 import notification_pb2
 import notification_pb2_grpc
+from central_notificacoes.grpc_server.notification_pb2 import NotificationRequest, NotificationResponse
+from central_notificacoes.grpc_server.notification_pb2_grpc import NotificationServiceStub
+
 
 @login_required
 def send_notification(request):
